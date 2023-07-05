@@ -14,7 +14,7 @@ public class App {
    * informando se o aluno foi aprovado ou não.
    */
 
-  public void ApprovalMedia() {
+  public void approvaMedia() {
 
     float dividend = 0f;
     float divider = 0f;
@@ -31,7 +31,7 @@ public class App {
       System.out.println("Digite o peso da atividade " + i + ":");
       short activityWeight = scanner.nextShort();
 
-      System.out.println("Digite a nota obtida para Projeto " + activityName + ":");
+      System.out.println("Digite a nota obtida para " + activityName + ":");
       short projectNote = scanner.nextShort();
 
       dividend += activityWeight * projectNote;
@@ -57,6 +57,6 @@ public class App {
    */
   public static void main(String[] args) {
     App app = new App();
-    app.ApprovalMedia();
+    app.approvaMedia();
   }
 }
